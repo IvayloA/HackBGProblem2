@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1446061370 source:c:\users\user\desktop\codeblocks\hackbgproblem2\main.cpp
+	<iostream>
+	<string>
+	<iterator>
+	<algorithm>
+

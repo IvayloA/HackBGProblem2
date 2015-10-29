@@ -34,30 +34,29 @@ int count = 0;
 
 int check(char **matrix, int x, int y, int dx, int dy,string word) {
     int k;
-  int isNot = false;
     for(k=0; k<word.size(); k++) {
             if(x < 0) {
-                return isNot;
+                return 0;
             }
             if(y < 0) {
-                return isNot;
+                return 0;
             }
             if(x >= row) {
-                return isNot;
+                return 0;
             }
             if(y >= col) {
-                return isNot;
+                return 0;
             }
 
             if(word[k] != matrix[x][y]) {
-                return isNot;
+                return 0;
             }
 
             x = x + dx;
             y = y + dy;
     }
 
-    return true;
+    return 1;
 }
 
 int main()
